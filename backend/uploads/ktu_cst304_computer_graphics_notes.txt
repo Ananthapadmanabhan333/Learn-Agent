@@ -1,0 +1,46 @@
+# KTU CST 304 COMPUTER GRAPHICS AND IMAGE PROCESSING - COMPREHENSIVE NOTES
+
+## MODULE 1: GRAPHICS SYSTEMS AND LINE DRAWING
+**Raster Scan vs Random Scan:**
+- **Raster Scan:** The electron beam is swept across the screen one row at a time universally. Images are stored as a 2D matrix of pixels in the frame buffer. Suitable for realistic images.
+- **Random Scan (Vector):** The electron beam is directed only to the parts of the screen where a picture is to be drawn. Higher resolution but only suitable for line drawing.
+
+**DDA (Digital Differential Analyzer) Line Drawing Algorithm:**
+Uses differences in X and Y to calculate points. Uses floating-point arithmetic (slower).
+**Bresenham's Line Drawing:**
+Uses only integer addition, subtraction, and bit shifting (much faster). It determines the next pixel to plot based on a decision parameter.
+
+**KTU FAQ (10 Marks):** Explain Bresenham's line drawing algorithm and rasterize the line from (20,10) to (30,18).
+A: Calculate dx = 10, dy = 8.
+Initial decision parameter p0 = 2dy - dx = 16 - 10 = 6.
+Since p0 > 0, next point is (x+1, y+1) and next pk = p0 + 2dy - 2dx = 6 + 16 - 20 = 2.
+Calculate iterates pixel by pixel!
+
+## MODULE 2: 2D TRANSFORMATIONS AND CLIPPING
+**Transformations (Using Homogeneous Coordinates):**
+Homogeneous coordinates add a third w-dimension (x, y, 1) so that translation can be represented as matrix multiplication instead of addition.
+1. **Translation:** Tx, Ty
+2. **Rotation:** Theta (uses cos(θ) and sin(θ))
+3. **Scaling:** Sx, Sy (If Sx=Sy, uniform scaling)
+4. **Shear:** Skewing an object along X or Y.
+
+**Cohen-Sutherland Line Clipping:**
+Uses a 4-bit region code (TBRL - Top, Bottom, Right, Left) to determine if a line segment is inside the viewing window.
+- If both codes are 0000: Trivially Accept.
+- If bitwise AND != 0000: Trivially Reject.
+- Else: Calculate intersections.
+
+## MODULE 4 & 5: IMAGE PROCESSING
+**Digital Image Fundamentals:**
+An image is a 2D function f(x,y) where x and y are spatial coordinates, and the amplitude f is intensity/gray level.
+*   **Sampling:** Digitizing the coordinate values. Determines spatial resolution.
+*   **Quantization:** Digitizing the amplitude values. Determines the number of gray levels (e.g., 8-bit = 256 levels).
+
+**Spatial Filtering Operations:**
+Applied directly to pixels.
+- **Smoothing (Low-pass) filters:** Mean filter, median filter. Reduces noise but blurs edges. Median filter is excellent for salt-and-pepper noise!
+- **Sharpening (High-pass) filters:** Laplacian, Sobel. Enhances edges and fine details.
+
+**KTU FAQ:**
+Q: What is histogram equalization? (5 Marks)
+A: It is a technique used to improve the contrast in images. It works by effectively spreading out the most frequent intensity values, leading to a flatter, wider histogram. Useful for images with backgrounds and foregrounds that are both bright or both dark.

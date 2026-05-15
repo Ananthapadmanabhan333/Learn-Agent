@@ -1,0 +1,57 @@
+# KTU CST 302 COMPILER DESIGN - COMPREHENSIVE STUDY NOTES & QUESTION BANK
+
+## MODULE 1: INTRODUCTION TO COMPILERS & LEXICAL ANALYSIS
+**What is a Compiler?**
+A compiler is a program that translates a source program written in a high-level language into an equivalent target program in a lower-level machine language.
+
+**Phases of a Compiler:**
+1. **Lexical Analysis (Scanner):** Reads the source code character by character and groups them into meaningful sequences called lexemes. Outputs a stream of tokens.
+2. **Syntax Analysis (Parser):** Group tokens into grammatical phrases that are used to synthesize output. Outputs a parse tree / syntax tree.
+3. **Semantic Analysis:** Checks for semantic errors (e.g., type checking, uninitialized variables).
+4. **Intermediate Code Generation:** Generates a machine-independent intermediate representation (like three-address code).
+5. **Code Optimization:** Improves the intermediate code so that the ultimate object program is faster or takes less space.
+6. **Code Generation:** Maps the optimized intermediate code to the target machine code.
+
+**FREQUENTLY ASKED QUESTIONS (KTU Previous Year):**
+Q: What is the difference between a compiler and an interpreter? (3 Marks)
+A: A compiler translates the entire source code into machine code before execution, creating an executable file. It is faster but requires more memory for the executable. An interpreter translates and executes the code line-by-line simultaneously. It is slower in execution but great for debugging.
+
+Q: Explain the various phases of a compiler with a block diagram. (10 Marks)
+A: The phases are Lexical, Syntax, Semantic, Intermediate Code Gen, Optimization, and Target Code Gen. (Draw the 6 sequential blocks). The Symbol Table and Error Handler interact with all phases. The input is "position = initial + rate * 60". The scanner produces identifiers (`id1`, `id2`, `id3`), the parser builds a tree where `+` is the root, semantic checks that `60` is an int and converts it to float, intermediate code makes `t1 = inttofloat(60)`, `t2 = id3 * t1`, etc.
+
+## MODULE 2: SYNTAX ANALYSIS (TOP-DOWN PARSING)
+**Context-Free Grammars (CFG):**
+A CFG consists of terminals, non-terminals, a start symbol, and productions.
+
+**Top-Down Parsing:**
+Builds the parse tree from the root down to the leaves. 
+*   **Recursive Descent Parsing:** Uses a set of recursive procedures to recognize input. Can suffer from infinite loops if the grammar is left-recursive.
+*   **LL(1) Parsing:** Non-recursive, predictive parsing using a parsing table. Requires removing Left-Recursion and performing Left-Factoring.
+    *   **FIRST(X):** Set of terminals that begin strings derived from X.
+    *   **FOLLOW(A):** Set of terminals that can appear immediately to the right of A in a sentential form.
+
+**KTU FAQ:**
+Q: Eliminate left recursion from the grammar: E -> E + T | T (3 Marks)
+A: Left recursion occurs when a non-terminal produces a string starting with itself.
+E -> T E'
+E' -> + T E' | epsilon
+
+## MODULE 3: BOTTOM-UP PARSING
+Bottom-up parsing builds the parse tree from leaves (input) up to the root (Start symbol). It uses Shift-Reduce parsing.
+*   **Shift:** Move the next input symbol onto the top of the stack.
+*   **Reduce:** Replace the handle on the stack with the LHS of a production.
+*   **LR Parsers:** Left-to-right scan, Rightmost derivation in reverse.
+    *   **SLR (Simple LR):** Uses FOLLOW sets to resolve conflicts.
+    *   **LALR (Look-Ahead LR):** Merges states with the same core items but different lookaheads. Used in YACC.
+
+## MODULE 4 & 5: CODE GENERATION & OPTIMIZATION
+**Three-Address Code (TAC):**
+A sequence of statements of the typical form `x = y op z`.
+*   Quadruples: (op, arg1, arg2, result)
+*   Triples: (op, arg1, arg2)
+
+**Code Optimization Techniques:**
+1. Common Subexpression Elimination
+2. Dead Code Elimination
+3. Constant Folding
+4. Loop Invariant Code Motion (moving computations outside the loop if they don't change).

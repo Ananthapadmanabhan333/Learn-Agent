@@ -1,0 +1,21 @@
+
+=====================================================
+APJ ABDUL KALAM TECHNOLOGICAL UNIVERSITY
+SIXTH SEMESTER B.TECH DEGREE EXAMINATION
+Course Code: CST 304
+Course Name: COMPUTER GRAPHICS AND IMAGE PROCESSING
+Max Marks: 100
+Duration: 3 Hours
+=====================================================
+
+PART A (Answer all questions, each carries 3 marks)
+1. Distinguish between raster scan and random scan displays.
+2. What are the basic 2D transformations? Give the matrix representations.
+3. Explain Cohen-Sutherland line clipping algorithm briefly.
+4. Define spatial resolution and gray level resolution.
+5. What is histogram equalization?
+
+PART B (Answer any one full question from each module, each carries 14 marks)
+MODULE 1
+11. a) Derive Bresenham's line drawing algorithm for |m| < 1. Using the algorithm, plot the pixels for a line from (20, 10) to (30, 18). (10 marks)
+    b) Explain the working principle of CRT. (4 marks)

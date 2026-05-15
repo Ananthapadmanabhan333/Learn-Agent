@@ -1,0 +1,46 @@
+APJ ABDUL KALAM TECHNOLOGICAL UNIVERSITY
+B.Tech Scheme and Syllabus (2019/2024 Scheme)
+Computer Science and Engineering (Artificial Intelligence and Machine Learning)
+Semester 5 (Third Year)
+
+CORE COURSES:
+1. CST 301 - Formal Languages and Automata Theory
+   - Module 1: Introduction to regular expressions, DFA, NFA, epsilon-NFA, equivalence of DFA and NFA.
+   - Module 2: Regular grammars, Pumping lemma for regular languages, closure properties.
+   - Module 3: Context-Free Grammars (CFG), ambiguity, Chomsky Normal Form (CNF), Pushdown Automata (PDA).
+   - Module 4: Turing Machines, deterministic and non-deterministic TM, universal Turing machines.
+   - Module 5: Decidability, halting problem, PCP, introduction to complexity classes P, NP, and NP-complete.
+
+2. CST 303 - Computer Networks
+   - Module 1: OSI and TCP/IP reference models, physical layer, transmission media, multiplexing.
+   - Module 2: Data Link Layer, framing, error detection and correction, MAC protocols (CSMA/CD, CSMA/CA).
+   - Module 3: Network Layer, IP addressing (IPv4, IPv6), routing algorithms (Link State, Distance Vector).
+   - Module 4: Transport Layer, TCP and UDP protocols, congestion control.
+   - Module 5: Application layer protocols: HTTP, FTP, SMTP, DNS, SNMP.
+
+3. AMT 305 - Introduction to Machine Learning
+   - Module 1: Introduction to ML, supervised vs unsupervised learning, hypothesis space, version space.
+   - Module 2: Linear regression, logistic regression, gradient descent algorithms, overfitting and bias-variance tradeoff.
+   - Module 3: Support Vector Machines (SVM), decision trees, Information Gain, Gini index.
+   - Module 4: Artificial Neural Networks, perceptron, backpropagation algorithm, activation functions.
+   - Module 5: Unsupervised learning, k-means clustering, Principal Component Analysis (PCA).
+
+4. CST 307 - Microprocessors and Microcontrollers
+   - Module 1: Architecture of 8086 microprocessor, register organization, memory addressing.
+   - Module 2: 8086 Instruction set, assembly language programming, interrupts.
+   - Module 3: Interfacing memory and I/O devices, 8255 PPI, 8259 PIC.
+   - Module 4: 8051 Microcontroller architecture, pin description, memory organization.
+   - Module 5: 8051 instruction set, timers/counters, serial communication programming.
+
+5. CST 309 - Management of Software Systems
+   - Module 1: Software processes, agille software development, Scrum, Extreme Programming.
+   - Module 2: Requirements engineering, software modeling, UML diagrams.
+   - Module 3: Architectural design, design patterns, object-oriented design.
+   - Module 4: Software testing, TDD, release testing, user testing.
+   - Module 5: Software evolution, project management, risk management, quality management.
+
+ELECTIVES & LABS:
+- AML 331 - Machine Learning Lab
+  Perform classification, regression, and clustering using Python libraries (Scikit-learn, Pandas).
+- CSL 333 - Database Management Systems Lab
+  Write advanced SQL queries, implement triggers, stored procedures, and connect DB with a frontend application.

@@ -1,0 +1,52 @@
+# KTU CST 306 ALGORITHM ANALYSIS AND DESIGN - COMPREHENSIVE STUDY NOTES & QUESTION BANK
+
+## MODULE 1: INTRODUCTION & ASYMPTOTIC ANALYSIS
+**What is an Algorithm?**
+A step-by-step procedure to solve a specific problem in a finite amount of time. Analyzed via Time Complexity and Space Complexity.
+
+**Asymptotic Notations:**
+1. **Big-O (O):** Represents the upper bound of the running time. Worst-case scenario.
+2. **Omega (Ω):** Represents the lower bound. Best-case scenario.
+3. **Theta (Θ):** Represents the tight bound. Average-case scenario.
+
+**Master Theorem:**
+Used for solving recurrence relations of the form `T(n) = aT(n/b) + f(n)`, where `a >= 1` and `b > 1`.
+Case 1: If f(n) = O(n^(log_b a - epsilon)), then T(n) = Theta(n^(log_b a)).
+Case 2: If f(n) = Theta(n^(log_b a)), then T(n) = Theta(n^(log_b a) * log n).
+Case 3: If f(n) = Omega(n^(log_b a + epsilon)), then T(n) = Theta(f(n)).
+
+**KTU FAQ:**
+Q: Solve the recurrence relation T(n) = 2T(n/2) + n using Master Theorem. (3 Marks)
+A: Here a=2, b=2, f(n)=n. log_b(a) = log_2(2) = 1. So n^(log_b a) = n^1 = n.
+Since f(n) = Theta(n^(log_b a)), this is Case 2.
+Therefore, T(n) = Theta(n log n). This is the complexity of Merge Sort!
+
+## MODULE 2: DIVIDE & CONQUER AND GREEDY ALGORITHMS
+**Divide and Conquer:**
+1. Divide the problem into smaller subproblems.
+2. Conquer the subproblems by solving them recursively.
+3. Combine the solutions.
+Examples: Merge Sort (O(n log n)), Quick Sort (Worst O(n^2), Avg O(n log n)), Binary Search (O(log n)).
+
+**Greedy Method:**
+Makes the optimal choice at each step hoping it leads to a global optimum.
+Examples: Fractional Knapsack, Huffman Coding, Kruskal's, Prim's.
+
+**KTU FAQ:**
+Q: Differentiate between Fractional Knapsack and 0/1 Knapsack. Which algorithm is used for each? (5 Marks)
+A: Fractional Knapsack allows taking fractions of items to maximize value. It is solved using the Greedy Method by sorting items by value/weight ratio. Time complexity is O(n log n).
+0/1 Knapsack requires taking an item completely or leaving it (no fractions). It cannot be solved using Greedy and must be solved using Dynamic Programming. Time complexity is O(nW) where W is capacity.
+
+## MODULE 3: DYNAMIC PROGRAMMING
+Solves overlapping subproblems by storing their results in a table (memoization/tabulation).
+Examples: Matrix Chain Multiplication, Longest Common Subsequence (LCS), Floyd-Warshall.
+
+## MODULE 4: GRAPH ALGORITHMS
+*   **BFS (Breadth First Search):** Uses a Queue. Time complexity O(V+E). Unweighted shortest path.
+*   **DFS (Depth First Search):** Uses a Stack. Time complexity O(V+E). Topological sorting.
+*   **Dijkstra's Algorithm:** Single-source shortest path for graphs with non-negative weights. Uses Greedy Method and a Min-Priority Queue.
+
+## MODULE 5: COMPLEXITY THEORY
+*   **P (Polynomial Time):** Problems that can be solved in polynomial time by a deterministic Turing Machine.
+*   **NP (Non-deterministic Polynomial):** Problems whose solutions can be VERIFIED in polynomial time.
+*   **NP-Complete:** The hardest problems in NP. If one NP-Complete problem is solved in polynomial time, P = NP. (e.g., TSP, SAT problem).

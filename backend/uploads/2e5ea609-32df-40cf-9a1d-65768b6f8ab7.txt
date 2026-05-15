@@ -1,0 +1,47 @@
+APJ ABDUL KALAM TECHNOLOGICAL UNIVERSITY
+B.Tech Scheme and Syllabus
+Computer Science and Engineering (Artificial Intelligence and Machine Learning)
+Semester 6 (Third Year)
+
+CORE COURSES:
+1. CST 302 - Compiler Design
+   - Module 1: Introduction to compilers, phases of a compiler, lexical analysis, finite automata.
+   - Module 2: Syntax analysis, context-free grammars, top-down parsing, recursive descent parsing, LL(1).
+   - Module 3: Bottom-up parsing, shift-reduce parsing, operator precedence parsing, LR parsers (SLR, LALR).
+   - Module 4: Syntax-directed translation, intermediate code generation, three-address code.
+   - Module 5: Code optimization, data-flow analysis, code generation, register allocation.
+
+2. CST 304 - Computer Graphics and Image Processing
+   - Module 1: Introduction to computer graphics, raster scan systems, line drawing algorithms (DDA, Bresenham).
+   - Module 2: 2D geometric transformations (translation, rotation, scaling), 2D viewing pipeline, clipping.
+   - Module 3: 3D object representation, 3D transformations, projections (parallel and perspective).
+   - Module 4: Digital image fundamentals, image sampling and quantization, spatial domain filtering.
+   - Module 5: Image enhancement in frequency domain, image segmentation, edge detection, mathematical morphology.
+
+3. CST 306 - Algorithm Analysis and Design
+   - Module 1: Asymptotic notations, recurrence relations, Master's theorem.
+   - Module 2: Divide and conquer (Merge sort, Quick sort), greedy algorithms (Fractional knapsack, Huffman coding).
+   - Module 3: Dynamic programming (Matrix chain multiplication, Longest Common Subsequence).
+   - Module 4: Graph algorithms, BFS, DFS, Minimum Spanning Trees (Prim's, Kruskal's), shortest paths (Dijkstra's).
+   - Module 5: Complexity theory, P, NP, NP-Complete, NP-Hard problems, approximation algorithms.
+
+4. AMT 308 - Deep Learning / Natural Language Processing
+   - Module 1: Architecture of deep feedforward networks, deep learning vs traditional ML.
+   - Module 2: Convolutional Neural Networks (CNNs), pooling layers, popular CNN architectures (VGG, ResNet).
+   - Module 3: Recurrent Neural Networks (RNNs), Long Short-Term Memory (LSTM), Gated Recurrent Units (GRU).
+   - Module 4: Autoencoders, Generative Adversarial Networks (GANs).
+   - Module 5: Natural Language Processing basics, word embeddings (Word2Vec, GloVe), standard NLP tasks.
+
+5. HUT 300 - Industrial Economics & Foreign Trade
+   - Module 1: Scarcity and choice, production possibilities frontier, basic economic questions.
+   - Module 2: Demand and supply analysis, elasticity of demand, market equilibrium.
+   - Module 3: Production and cost functions, short-run and long-run costs, economies of scale.
+   - Module 4: Market structures (perfect competition, monopoly, oligopoly), pricing strategies.
+   - Module 5: International trade theories, balance of payments, foreign exchange markets.
+
+ELECTIVES & LABS:
+- AML 332 - Deep Learning Lab
+  Implement multi-layer perceptrons, CNNs for image classification, sequence models for text in TensorFlow/PyTorch.
+- CSL 332 - Networking Lab
+  Implementation of routing protocols, socket programming, network simulation using NS2/NS3.
+- CST 308 - Comprehensive Course Work (Viva and core evaluation)

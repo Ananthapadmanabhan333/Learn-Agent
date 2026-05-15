@@ -1,0 +1,23 @@
+
+=====================================================
+APJ ABDUL KALAM TECHNOLOGICAL UNIVERSITY
+SIXTH SEMESTER B.TECH DEGREE EXAMINATION
+Course Code: CST 306
+Course Name: ALGORITHM ANALYSIS AND DESIGN
+Max Marks: 100
+Duration: 3 Hours
+=====================================================
+
+PART A (Answer all questions, each carries 3 marks)
+1. Define Big O, Omega, and Theta notations.
+2. What is the time complexity of binary search? Justify.
+3. State the Master Theorem.
+4. Explain the concept of Dynamic Programming.
+5. What is minimum spanning tree? 
+
+PART B (Answer any one full question from each module, each carries 14 marks)
+MODULE 1
+11. a) Solve the recurrence relation T(n) = 2T(n/2) + O(n) using the Master Theorem. (7 marks)
+    b) Write the algorithm for Merge Sort and analyze its time complexity in best, average, and worst cases. (7 marks)
+MODULE 3
+15. a) Find the longest common subsequence (LCS) for the strings X = "ABCBDAB" and Y = "BDCABA". Keep track of the DP table. (10 marks)

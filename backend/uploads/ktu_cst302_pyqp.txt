@@ -1,0 +1,29 @@
+
+=====================================================
+APJ ABDUL KALAM TECHNOLOGICAL UNIVERSITY
+SIXTH SEMESTER B.TECH DEGREE EXAMINATION
+Course Code: CST 302
+Course Name: COMPILER DESIGN
+Max Marks: 100
+Duration: 3 Hours
+=====================================================
+
+PART A (Answer all questions, each carries 3 marks)
+1. Define Lexical Analysis and identify the tokens in `a = b + c * 10;`.
+2. Construct the NFA for the regular expression `(a|b)*abb`.
+3. What is left recursion? Eliminate left recursion from the grammar: A -> Aα | β.
+4. Differentiate between parse tree and abstract syntax tree.
+5. Define Three Address Code (TAC). Give the TAC for `x = -y * z`.
+
+PART B (Answer any one full question from each module, each carries 14 marks)
+MODULE 1
+11. a) Explain the various phases of a compiler with a neat block diagram, illustrating the compilation of the statement `position = initial + rate * 60`. (10 marks)
+    b) Explain compiler construction tools. (4 marks)
+MODULE 2
+13. a) Compute the FIRST and FOLLOW sets for the following grammar and construct the LL(1) parsing table:
+       E  -> TE'
+       E' -> +TE' | ε
+       T  -> FT'
+       T' -> *FT' | ε
+       F  -> (E) | id
+       (14 marks)

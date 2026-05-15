@@ -1,0 +1,23 @@
+# Dependencies
+node_modules/
+backend/venv/
+backend/__pycache__/
+frontend/node_modules/
+frontend/dist/
+frontend_new/node_modules/
+frontend_new/dist/
+
+# Environment Variables
+.env
+
+# Database
+backend/a1engine.db
+backend/chroma_db/
+
+# IDEs
+.vscode/
+.idea/
+
+# OS files
+.DS_Store
+Thumbs.db
