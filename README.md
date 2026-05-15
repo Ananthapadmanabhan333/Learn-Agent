@@ -98,4 +98,4 @@ Distributed under the MIT License. See `LICENSE` for more information.
 
 ---
 
-Developed with ❤️ for the future of education.
+Developed by Ananthapadmanabhan 
